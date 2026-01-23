@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Buscamos jugadores! Rellena el formulario para pertenecer a los Muchachos del calavera</title>
 </head>
-<body bgcolor="green">  
+<body bgcolor="green">
+    <header>
     <h2 align="center"><b>¡Buscamos jugadores! Rellena el formulario para pertenecer a los Muchachos del calavera </b></h2>
+    </header>
     <form>
         <table  bgcolor="white" border="1" align="center">
             <tr>
@@ -50,11 +52,14 @@
                     Virtudes
                 </td> 
                 <td>
-                    <input type="checkbox" name="a1" value="Goleador">Goleador<br>
-                    <input type="checkbox" name="a2" value="Creador de asistencias">Creador de asistencias<br>
-                    <input type="checkbox" name="a3" value="Defensor">Defesor<br>
-                    <input type="checkbox" name="a4" value="Portero">Portero<br>
-                    <input type="checkbox" name="a5" value="Mundo banquillo">Mundo banquillo<br>
+                    <input list="virtudes" name="virtudes">
+                    <datalist id="virtudes">
+                    <option value="Goleador">
+                    <option value="Creador de asistencias">
+                    <option value="Defensor">
+                    <option value="Portero">
+                    <option value="Mundo_banquillo">
+                    </datalist>
                 </td>  
             </tr>
             <tr>
@@ -95,7 +100,15 @@
                     <input type="submit" value="Enviar">
                     </div>
                 </td>
-
+            </tr>
+        </table>
+        </form>
+        <nav>
+        <a href="../index.html">Acceder a la pagina principal</a>
+        </nav>
+        <footer>
+                Página creada por Mateo Rubiales Montes y Ángel González López
+        </footer>
         </body>
         <br>
         <br>
