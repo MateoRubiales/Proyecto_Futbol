@@ -1,3 +1,4 @@
+
 p{
 font-size: 20px;  
 }
@@ -76,6 +77,23 @@ footer {
 .subrayado{
     text-decoration: underline;
 }
+table {
+    text-align: center;
+}
+div {
+  text-align: center;  
+}
 img{
-width:"300"; height:"300" 
+width:500px; 
+height:500px;
+ 
+}
+video{
+width:1000px; height:1000px
+}
+source {
+text-align: center;
+}
+#video {
+text-align: center;
 }
