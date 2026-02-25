@@ -1,0 +1,23 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /*Permite que las imagenes bajen de linea*/
+    gap: 15px; /*Espacio entre imagenes*/
+    justify-content: center;
+}
+
+.galeria img {
+     width: 350px; /*Ancho fijo*/
+    height: 350px; /*Ancho fijo*/
+    border-radius: 50%;/*Hace la imagen redonda*/
+    cursor: pointer;
+    transition: transform 0.3s; box-shadow: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
+}
+
+figcaption{
+    text-align: center;
+}

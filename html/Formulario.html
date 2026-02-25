@@ -5,114 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Buscamos jugadores! Rellena el formulario para pertenecer a los Muchachos del calavera</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/estilos-formulario.css">
 </head>
-<body bgcolor="green">
     <header>
-    <h2 align="center"><b>¡Buscamos jugadores! Rellena el formulario para pertenecer a los Muchachos del calavera </b></h2>
+  <h1 class="text-primary">¡Buscamos jugadores para nuestro club! Rellena el formulario para pertenecer a los Muchachos del calavera</h1>
     </header>
-    <form>
-        <table  bgcolor="white" border="1" align="center">
-            <tr>
-                 <td>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" id="Nombre" name="Nombre" required placeholder="Mateo" />
-                </td>
-                <td>
-                    <label for="Apellidos">Apellidos</label>
-                    <input type="text" id="Apellidos" name="Apellidos" required placeholder="Rubiales Montes"  />
-                </td>          
-            </tr>  
-            <tr>
-                <td>
-                 <label for="Posición">Posición</label>
-                    <input type="text" id="Posición" name="Posición" placeholder="Delantero" />
-                 </td>
-                 <td>
-                    <label for="Equipo-actual">Equipo actual</label>
-                    <input type="text" id="Equipo-actual" name="Equipo-actual" />
-                 </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email"  size="50" placeholder="mateorubimon@gmail.com"/>
-                 </td>   
-            </tr>
-            <tr>
-                <td>
-                    <div align="center"></div>
-                </td>
-                <td>
-                <input type="radio" name="Sexo" value="Hombre">Hombre <br>
-                <input type="radio" name="Sexo" value="Mujer">Mujer<br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Virtudes
-                </td> 
-                <td>
-                    <input list="virtudes" name="virtudes">
-                    <datalist id="virtudes">
-                    <option value="Goleador">
-                    <option value="Creador de asistencias">
-                    <option value="Defensor">
-                    <option value="Portero">
-                    <option value="Mundo_banquillo">
-                    </datalist>
-                </td>  
-            </tr>
-            <tr>
-                <td>
-                    <label for="Edad">Edad</label>
-                    <input type="text" id="Edad" name="Edad" />
-                </td> 
-                <td>
-                    <label for="Nacionalidad">Nacionalidad</label>
-                    <input type="text" id="Nacionalidad" name="Nacionalidad" />
-                </td> 
-            </tr>
-            <tr>
-                <td>
-                    Suba sus mejores jugadas
-                </td>  
-                <td>
-                    <input type="file" name="fichero" size="60" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Añade algo que nos quieras comentar
-                </td>   
-                <td>
-                <label for="Comentario"></label>
-                <textarea id="Comentario" name="Comentario" rows="5" cols="45" maxlength="250" minlength="20"></textarea>
-                </td>
-             </tr>
-            <tr>
-                 <td>
-                    <div align="center">
-                    <input type="reset" value="Resetear">
-                    </div>
-                </td>
-                <td>
-                    <div align="center">
-                    <input type="submit" value="Enviar">
-                    </div>
-                </td>
-            </tr>
-        </table>
-        </form>
+    <br>
+    <form >
+    <fieldset>
+        <div>
+        <label for="Nombre" class="form-label mt-4">Nombre</label>
+        <input type="text" class="form-control" id="Nombre" aria-describedby="emailHelp" placeholder="Escribe tu nombre">
+        </div>
+        <div>
+        <label for="Apellido" class="form-label mt-4">Apellido</label>
+        <input type="text" class="form-control" id="Apellido" aria-describedby="emailHelp" placeholder="Escribe tu nombre">
+        </div>
+        <div>
+        <label for="Posición" class="form-label mt-4">Posición</label>
+        <input type="text" class="form-control" id="Posición" aria-describedby="Posición" placeholder="De que juegas en el campo">
+        </div>
+        <div>
+        <label for="Email1" class="form-label mt-4">Email</label>
+        <input type="text" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Escribe tu email">
+        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico.</small>
+        </div>
+        <div>
+        <label for="Equipo" class="form-label mt-4">Equipo actual</label>
+        <input type="text" class="form-control" id="Equipo" placeholder="¿En que equipo juegas?" autocomplete="off">
+        </div>
+        <div>
+        <label for="Sexo" class="form-label mt-4">Sexo</label>
+        <select class="form-select" id="Sexo">
+            <option>Hombre</option>
+            <option>Mujer</option>
+        </select>
+        </div>
+        <div>
+        <label for="Edad" class="form-label mt-4">Edad</label>
+        <input type="text" class="form-control" id="Edad" placeholder="Escribe tu edad" autocomplete="off">
+        </div>
+        <div>
+        <label for="Nacionalidad" class="form-label mt-4">Nacionalidad</label>
+        <input type="text" class="form-control" id="Nacionalidad" placeholder="¿En que país vives?" autocomplete="off">
+        </div>
+        <div>
+        <label for="exampleSelect2" class="form-label mt-4">Virtudes</label>
+        <select multiple="" class="form-select" id="exampleSelect2">
+            <option>Goleador</option>
+            <option>Creador de asistencias</option>
+            <option>Rompe piernas</option>
+            <option>Portero</option>
+            <option>Mundo_banquillo</option>
+        </select>
+        </div>
+        <div>
+        <label for="exampleTextarea" class="form-label mt-4">Añade algo que nos quieras comentar</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <div>
+        <label for="formFile" class="form-label mt-4">Suba sus mejores jugadas</label>
+        <input class="form-control" type="file" id="formFile">
+        </div>
+        <div>
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </fieldset>
+    </form>
+        <br>
+        <br>
         <nav>
         <a href="../index.html">Acceder a la pagina principal</a>
         </nav>
+        <br>
         <footer>
                 Página creada por Mateo Rubiales Montes y Ángel González López
         </footer>
         </body>
-        <br>
-        <br>
-        <nav>
-        <a href="../index.html">Acceder a la pagina principal</a>
-        </nav>
         </html>
